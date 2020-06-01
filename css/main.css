@@ -61,7 +61,7 @@ nav li
     
 }
 
-/* styles for the anchor tags that are in nav li */
+/* styles nav li */
 nav li a
 {
     list-style-type: none;
@@ -237,7 +237,7 @@ aside
         width: 40%;
         margin-top: 20em;
         margin-left: 14.7rem;
-        font-style: italic;
+        font-style: normal;
        
     }
     
@@ -322,6 +322,7 @@ aside
     footer
     {
         background-color: #B69CFD;
+        color: white;
         margin-top: -0.2em;
         padding: 0.5em;
         position: fixed;

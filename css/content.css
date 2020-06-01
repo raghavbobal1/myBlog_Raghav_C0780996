@@ -2,24 +2,33 @@
 /* Style for the images on the hobbies page */
 .row {
     display: flex;
+    flex-wrap: wrap-reverse;
+    padding:  100px;
+    flex: 100%;
   }
   
   .column {
-    flex: 10%;
-    padding: 5px;
+    text-align: center;
+    flex: 5%;
+    padding: 100px;
+    width: 60%;
+    
   }
   
   /* Styles for the images on the more about me page */
   .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     padding: 0 4px;
   }
   
   /* two equal columns that sits next to each other */
   .column {
-    flex: 10%;
-    padding: 2px;
+    text-align: center;
+    flex: 50%;
+    padding: 50px;
+    line-height: 0.11em;
+    font-weight: bold;
   }
   
   .column img {
@@ -38,7 +47,6 @@ img
     max-width: 100%;
 }
 
-/* Adopting the mobile-first strategy */
 /* styles for the Mobile Layout */
 
 /* styles for banner and header */
@@ -47,6 +55,18 @@ img
     display: none;
 }
 
+h2
+{  
+   font-size: 11px;
+    color: rgb(94, 71, 185);
+    margin-top: 5em;
+    text-decoration: underline;
+}
+
+h3
+{
+    color: rgb(94, 71, 185);
+}
 #headercontainer 
 {
     width: 100%;
@@ -85,49 +105,33 @@ nav ul
 /* styles for the li in nav */
 nav li 
 {
-    background-color: #ffd9dd;
+    background-color: B69CFD;
     border-radius: 0.2em;
     margin: 0.22em;
     padding: 0.5em;
-    border-color: black;
+    border-color: rgb(247, 168, 247);
 }
 
 nav li a
 {
     list-style-type: none;
     text-decoration: none;
-    color: black;
+    color: #B69CFD;
 }
 
 nav li:hover
 {
-    background-color: #f94c60;
+    background-color: rgb(70, 52, 139);
 }
 
 /* styles for paragraphs */
 p
 {
     margin-top: 1.5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #e6e6e6;
-    font-size: 0.8em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
     text-align: justify;
-}
-
-/* styles for work experience text and logos */
-#jobs
-{
-    margin-top: 1.5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #e6e6e6;
-    font-size: 0.8em;
-    text-align: justify;
-}
-
-.joblogos
-{
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 dt
@@ -149,13 +153,13 @@ dd
 h2, h4
 {
     color: #e6e6e6;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* styles for asides */
 aside
 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     display: none;
 }
 
@@ -174,14 +178,14 @@ aside li
     display: none;
 }
 
-.related
+.links
 {
-    width: 50%;
+    width: 20%;
 }
 
 footer
 {
-    background-color:#f0f0f0;
+    background-color:#B69CFD;
     margin-top: -0.2em;
     padding: 0.2em;
     position: fixed;
@@ -189,96 +193,8 @@ footer
     bottom: 0;
 }
 
-.moreprojects
-{
-    padding-bottom: 3em;
-}
 
-.mySlides
-{
-    display: none;
-    text-align: center;
-    width: 89%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.mySlides2
-{
-    display: none;
-    text-align: center;
-}
-
-.video
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 24em;
-    height: 18em;
-}
-
-.text
-{
-    display: none;
-}
-
-/* styles for pointers */
-.gamingprev {
-cursor: pointer;
-width: auto;
-margin-top: -1.375em;
-padding: 1em;
-font-weight: bold;
-font-size: 1em;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-color:white;
-}
-
-.gamingnext
-{
-    cursor: pointer;
-    width: auto;
-    margin-top: -1.375em;
-    margin-left: 0em;
-    padding: 1em;
-    font-weight: bold;
-    font-size: 1em;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    color:white;
-}
-
-.designprev {
-    cursor: pointer;
-    width: auto;
-    margin-top: -1.375em;
-    padding: 1em;
-    font-weight: bold;
-    font-size: 1em;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    color:white;
-    }
-
-.designnext
-{
-    cursor: pointer;
-    width: auto;
-    margin-top: -1.375em;
-    margin-left: 0em;
-    padding: 1em;
-    font-weight: bold;
-    font-size: 1em;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    color:white;
-}
 
 .desktop
 {
@@ -299,7 +215,7 @@ color:white;
     margin-right: auto;
 }
 
-.projectsarticle
+.educationdetails
 {
     width: 90%;
     margin-left: auto;
@@ -308,16 +224,15 @@ color:white;
 
 /* styles for tables */
 table {
-    border: 1px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
     padding: 0.5em;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
   }
 
   td
   {
     border: 1px solid #e6e6e6;
     padding: 0.2em;
-
   }
 
   th
@@ -327,11 +242,6 @@ table {
     padding: 0.2em;
   }
   
-  .video
-    {
-        display: none;
-    }
-
   /* Styling for tablet viewport begins here */
 @media only screen and (min-width: 688px)
 {
@@ -340,13 +250,17 @@ table {
         display: none;
     }
 
+    h2
+    {
+        color: rgb(94, 71, 185);
+    }
     .banner
     {
-        width: 80%;
-        text-align: center;
+        width: 20%;
+        text-align: left;
     }
 
-    #headercontainer 
+    #headerbanner 
     {
         padding-bottom: 2em;
     }
@@ -358,28 +272,26 @@ table {
 
     nav
     {
-        /* float: right; */
-        margin-top: -1em;
-        /* margin-left: -8em; */
-        padding-bottom: 2em;
+       width: 100%;
+        margin-top: 1em;
+        line-height: 2.5em;
+        padding: 0em;
     }
 
     nav ul
     {
         margin-top: 0em;
-        /* margin-right: 3em;
-        margin-left: -1em; */
+        padding: -1em;
         margin-left: auto;
         margin-right: auto;
     }
 
     nav li
     {
-        display: inline;
-        /* padding-bottom: 2em; */
-        padding-left: 1em;
-        padding-right: 1em;
-        margin-left: -0.2em;
+        display: -webkit-inline-flex;
+        padding-left: -1em;
+        padding-right: -1em;
+        margin-left: -0.3em;
         background: transparent;
         color: #e6e6e6;
     }
@@ -391,97 +303,12 @@ table {
 
     nav li a:hover
     {
-       background-color: #f94c60;
+       background-color: rgb(37, 0, 139);
     }
     
-    .related
+    .links
     {
       width: 15%;
-    }
-
-    .mySlides
-    {
-        display: none;
-        text-align: center;
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .gamingprev {
-        cursor: pointer;
-        width: auto;
-        margin-top: -1.375em;
-        margin-left: 8em;
-        padding: 1em;
-        font-weight: bold;
-        font-size: 1.125em;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        color:white;
-        }
-    
-
-    .gamingnext
-    {
-        cursor: pointer;
-        width: auto;
-        margin-top: 6em;
-        margin-left: 20em;
-        padding: 1em;
-        font-weight: bold;
-        font-size: 1.12em;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        color:white;
-    }
-    
-    .designprev {
-        cursor: pointer;
-        width: auto;
-        margin-top: -1.375em;
-        margin-left: 8em;
-        padding: 1em;
-        font-weight: bold;
-        font-size: 1.125em;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        color:white;
-        }
-    
-    .designnext
-    {
-        cursor: pointer;
-        width: auto;
-        margin-top: 6em;
-        margin-left: 20em;
-        padding: 1em;
-        font-weight: bold;
-        font-size: 1.12em;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        color:white;
-    }
-
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
     }
 
     dt
@@ -507,28 +334,16 @@ table {
         width: 80%;
     }
 
-    .video {
-        margin-left: auto;
-        margin-right: auto;
-        width: 40em;
-        height: 30em;
-        display: block;
-    }
-
-    .projectsarticle
-    {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-    
     table
     {
         width:90%;
     }
+
+  
 }
 
 /* Styling for desktop viewport begins here */
+
 @media only screen and (min-width: 999px) 
   {
     header 
@@ -539,11 +354,24 @@ table {
         margin-left: 3.5em;
     }
 
+    table
+    {
+        width: 90%;
+        float: right;
+
+    }
+
+    h6{
+        color: white;
+    }
+    p{
+        font-size: 19px;
+    }
     nav
     {
         float: right;
         margin-top: -4.7em;
-        /* margin-left: -8em; */
+        margin-right: -10em;
     }
 
     nav ul
@@ -577,7 +405,7 @@ table {
     /* styles for footer */
     footer
     {
-        background-color:#f0f0f0;
+        background-color:#B69CFD;
         margin-top: -0.2em;
         padding: 0.5em;
         position: fixed;
@@ -599,38 +427,41 @@ table {
         display: block;
         font-size: 0.6em;
         color: white;
-        margin-top: -118em;
+        margin-top: -262em;
+        margin-left: -0.5em;
         text-decoration: none;
     }
 
     .projectsaside
     {
-        font-size: 0.6em;
+        font-size: 0.4em;
         color: white;
-        margin-top: -210em;
+        margin-top: -203em;
         text-decoration: none;
     }
+
     
     .hobbiesaside
     {
-        font-size: 0.6em;
+        font-size: 0.3em;
         color: white;
-        margin-top: -190em;
+        margin-top: -1551em;
         text-decoration: none;
     }
 
     aside ul
     {
-        font-size: 2em;
+        font-size: 1.2em;
         float: left;
-        padding-left: 2em;
+        padding-left: 1em;
         margin-left: 1em;
     }
 
     aside li
     {
-        padding: 0.6em;
+        padding: 0.4em;
         display: block;
+        font-size: 2.2em;
     }
 
     aside li a
@@ -661,136 +492,13 @@ table {
         padding-bottom: 1em;
     }
 
-    .projectsarticle
+    .educationdetails
     {
         margin-left: 10.5em;
         width: 80%;
     }
 
-    /* styling for hobbies img carousels begins here */
 
-    * {box-sizing:border-box}
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin-top: 2em;
-        margin-left: 18em;
-    }
-
-    .slideshow-container2 {
-        max-width: 1000px;
-        position: relative;
-        margin-top: 2em;
-        margin-left: 20em;
-    }
-
-    .mySlides {
-        display: none;
-        text-align: center;
-      }
-
-    .mySlides2 {
-        display: none;
-        text-align: center;
-      }
-
-    /* Next & previous buttons */
-    .gamingprev, .gamingnext 
-        {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -1.125em;
-            margin-left: 0em;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-    .designprev, .designnext
-        {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            margin-left: 0em;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-
-        }
-    /* Position the "next button" to the right */
-    .gamingnext,.designnext {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    }
-    
-     /* On hover, add a black background color with a little bit see-through */
-    .gamingprev:hover, .gamingnext:hover, .designprev:hover, .designnext:hover {
-    background-color: rgba(0,0,0,0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/5 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    .video {
-        margin-left: auto;
-        margin-right: auto;
-        width: 32em;
-        height: 24em;
-        display: block;
-    }
-
-    .active, .dot:hover {
-    background-color: #717171;
-    }
-
-    /* Styles for Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
 
     dt
     {
@@ -819,7 +527,7 @@ table {
     
     table
     {
-        width: 88%;
+        width: 90%;
         padding: 1em;
     }
 
@@ -827,6 +535,5 @@ table {
     {
         padding: 0.5em;
     }
+
 }
-  
-  
