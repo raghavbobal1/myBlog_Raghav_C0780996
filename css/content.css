@@ -3,30 +3,37 @@
 .row {
     display: flex;
     flex-wrap: wrap-reverse;
-    padding:  100px;
-    flex: 100%;
+    padding: 10%;
+    flex: 80%;
+    width: 80%;
+    text-align: center;
+    margin-top: -5em;
   }
   
   .column {
     text-align: center;
-    flex: 5%;
-    padding: 100px;
-    width: 60%;
+    flex: 50%;
+    padding: 80px;
+    width: 800%;
     
   }
   
   /* Styles for the images on the more about me page */
-  .row {
+  .row1 {
     display: flex;
     flex-wrap: wrap-reverse;
-    padding: 0 4px;
+    padding: 30px;
+    flex: 30px;
+    
   }
+
   
   /* two equal columns that sits next to each other */
-  .column {
+  .column1 {
     text-align: center;
     flex: 50%;
-    padding: 50px;
+    padding: 15px;
+    width: 60%;
     line-height: 0.11em;
     font-weight: bold;
   }
@@ -66,6 +73,7 @@ h2
 h3
 {
     color: rgb(94, 71, 185);
+    font-size: 24px;
 }
 #headercontainer 
 {
@@ -150,10 +158,16 @@ dd
 }
 
 /* styles for headers */
-h2, h4
+h2
 {
     color: #e6e6e6;
     font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h4
+{
+    color: rgb(94, 71, 185);
+    text-align : center;
 }
 
 /* styles for asides */
@@ -245,14 +259,57 @@ table {
   /* Styling for tablet viewport begins here */
 @media only screen and (min-width: 688px)
 {
+
+    /* Styles for the images on the more about me page */
+  .row1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 3px;
+    flex: 30px;
+  }
+
+  
+  /* two equal columns that sits next to each other */
+  .column1 {
+    text-align: center;
+    flex: 50%;
+    padding: 20px;
+    width: 40%;
+    line-height: 0.11em;
+    font-weight: bold;
+  }
+
+    /* Style for the images on the hobbies page */
+.row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10%;
+    flex: 80%;
+    width: 80%;
+    text-align: center;
+    margin-top: -5em;
+  }
+  
+  .column {
+    text-align: center;
+    flex: 50%;
+    padding: 80px;
+    width: 800%;
+    margin-top: -10em;
+  }
+
+.project
+{
+    margin-top: -10em;
+    margin-right: 1.6em;
+    text-align: justify;
+    color: white;
+    padding: 10em;
+    font-size: 20px;
+}
     aside
     {
         display: none;
-    }
-
-    h2
-    {
-        color: rgb(94, 71, 185);
     }
     .banner
     {
@@ -339,6 +396,13 @@ table {
         width:90%;
     }
 
+    h4 
+    {
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
   
 }
 
@@ -346,6 +410,52 @@ table {
 
 @media only screen and (min-width: 999px) 
   {
+
+    /* Styles for the images on the more about me page */
+  .row1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 3px;
+    flex: 30px;
+  }
+
+  
+  /* two equal columns that sits next to each other */
+  .column1 {
+    text-align: center;
+    flex: 50%;
+    padding: 20px;
+    width: 40%;
+    line-height: 0.11em;
+    font-weight: bold;
+  }
+
+    /* Style for the images on the hobbies page */
+.row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10%;
+    flex: 80%;
+    width: 80%;
+    text-align: center;
+    margin-top: -5em;
+  }
+  
+  .column {
+    text-align: center;
+    flex: 50%;
+    padding: 80px;
+    width: 800%;
+    margin-top: -10em;
+  }
+      .project
+      {   
+        margin-right: 7.6em;
+        text-align: justify;
+          text-align: center;
+          margin-left: 6em;
+          padding: 10em;
+      }
     header 
     {
         margin-top: 0.2em;
@@ -436,7 +546,7 @@ table {
     {
         font-size: 0.4em;
         color: white;
-        margin-top: -203em;
+        margin-top: -953em;
         text-decoration: none;
     }
 
@@ -445,7 +555,7 @@ table {
     {
         font-size: 0.3em;
         color: white;
-        margin-top: -1551em;
+        margin-top: -3168em;
         text-decoration: none;
     }
 
@@ -472,24 +582,12 @@ table {
     }
 
     /* Styling for project components */
-    .project
-    {
-        margin-right: 7.6em;
-        text-align: justify;
-    }
+    
 
     .projectimg
     {
         display: block;
         margin-top: 6em;
-    }
-
-    .moreprojects
-    {
-        text-decoration: underline;
-        font-style: italic;
-        width: fit-content;
-        padding-bottom: 1em;
     }
 
     .educationdetails
@@ -535,5 +633,13 @@ table {
     {
         padding: 0.5em;
     }
+
+    h1{
+        color: rgb(94, 71, 185);
+        font-size: 30px;
+        text-align: center;
+    }
+
+
 
 }
