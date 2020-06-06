@@ -1,3 +1,3 @@
 # myBlog_Raghav_C0780996
 
-## Welcome the my personal website.
+### To checkout my personal website click [here](https://raghavbobal1.github.io/myBlog_Raghav_C0780996/index.html)
